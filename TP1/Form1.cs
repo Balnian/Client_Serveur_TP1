@@ -19,8 +19,7 @@ namespace TP1
 
         public void Chiffrer(String MotAChiffrer)
         {
-            
-            foreach
+
         }
     }
 }
