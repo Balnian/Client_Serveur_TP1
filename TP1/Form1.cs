@@ -16,5 +16,10 @@ namespace TP1
         {
             InitializeComponent();
         }
+
+        public void Chiffrer(String MotAChiffrer)
+        {
+
+        }
     }
 }
