@@ -77,6 +77,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Circulaire\Circulaire.csproj">
+      <Project>{b7c161f3-b7e5-4298-8ca3-6d8bbe3f4747}</Project>
+      <Name>Circulaire</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rotation\Rotation.csproj">
+      <Project>{2f8e1324-c2be-48f4-8c70-bc365e9ffe18}</Project>
+      <Name>Rotation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

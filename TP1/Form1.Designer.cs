@@ -34,7 +34,7 @@
             this.RB_Circulaire = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.TB_Avant = new System.Windows.Forms.TextBox();
-            this.TB_Before = new System.Windows.Forms.TextBox();
+            this.TB_Apres = new System.Windows.Forms.TextBox();
             this.NmUPDOWN = new System.Windows.Forms.NumericUpDown();
             this.LB_Avant = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +49,7 @@
             this.BT_Chiffrer.TabIndex = 0;
             this.BT_Chiffrer.Text = "Chiffrer";
             this.BT_Chiffrer.UseVisualStyleBackColor = true;
+            this.BT_Chiffrer.Click += new System.EventHandler(this.BT_Chiffrer_Click);
             // 
             // BT_Dechiffrer
             // 
@@ -58,6 +59,7 @@
             this.BT_Dechiffrer.TabIndex = 1;
             this.BT_Dechiffrer.Text = "Déchiffrer";
             this.BT_Dechiffrer.UseVisualStyleBackColor = true;
+            this.BT_Dechiffrer.Click += new System.EventHandler(this.BT_Dechiffrer_Click);
             // 
             // RB_Rotation
             // 
@@ -69,6 +71,7 @@
             this.RB_Rotation.TabStop = true;
             this.RB_Rotation.Text = "Rotation";
             this.RB_Rotation.UseVisualStyleBackColor = true;
+            this.RB_Rotation.CheckedChanged += new System.EventHandler(this.RB_Rotation_CheckedChanged);
             // 
             // RB_Circulaire
             // 
@@ -99,12 +102,12 @@
             this.TB_Avant.Size = new System.Drawing.Size(100, 20);
             this.TB_Avant.TabIndex = 5;
             // 
-            // TB_Before
+            // TB_Apres
             // 
-            this.TB_Before.Location = new System.Drawing.Point(180, 155);
-            this.TB_Before.Name = "TB_Before";
-            this.TB_Before.Size = new System.Drawing.Size(106, 20);
-            this.TB_Before.TabIndex = 6;
+            this.TB_Apres.Location = new System.Drawing.Point(180, 155);
+            this.TB_Apres.Name = "TB_Apres";
+            this.TB_Apres.Size = new System.Drawing.Size(106, 20);
+            this.TB_Apres.TabIndex = 6;
             // 
             // NmUPDOWN
             // 
@@ -139,7 +142,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LB_Avant);
             this.Controls.Add(this.NmUPDOWN);
-            this.Controls.Add(this.TB_Before);
+            this.Controls.Add(this.TB_Apres);
             this.Controls.Add(this.TB_Avant);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.RB_Circulaire);
@@ -162,7 +165,7 @@
         private System.Windows.Forms.RadioButton RB_Circulaire;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.TextBox TB_Avant;
-        private System.Windows.Forms.TextBox TB_Before;
+        private System.Windows.Forms.TextBox TB_Apres;
         private System.Windows.Forms.NumericUpDown NmUPDOWN;
         private System.Windows.Forms.Label LB_Avant;
         private System.Windows.Forms.Label label2;

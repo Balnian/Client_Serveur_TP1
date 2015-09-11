@@ -12,9 +12,14 @@ namespace Circulaire
         static String Chiffrer(String str, int Value)
         {
             String Encoder = "";
-            for (int i = str.Length-(Value%str.Length); i-(Value%str.Length) < str.Length; i++)
+            Encoder = str.Split(str.ElementAt(Value % str.Length)).ElementAt(1) + str.Split(str.ElementAt(Value % str.Length)).ElementAt(0);
+            for (int i = 0; i < Value; i++)
+            {
+                Encoder += str.ElementAt(str.Length - i-1);
+            }
+            for (int i = str.Length-(Value%str.Length); i%str.Length < str.Length; i++)
 			{
-			    Encoder+=str.ElementAt(i);
+                Encoder += str.ElementAt(i);
 			}
             return Encoder;
           
@@ -39,5 +44,7 @@ namespace Circulaire
                 }
 
             }
+            return Encoder;
+        }
     }
 }
