@@ -71,7 +71,6 @@
             this.RB_Rotation.TabStop = true;
             this.RB_Rotation.Text = "Rotation";
             this.RB_Rotation.UseVisualStyleBackColor = true;
-            this.RB_Rotation.CheckedChanged += new System.EventHandler(this.RB_Rotation_CheckedChanged);
             // 
             // RB_Circulaire
             // 
