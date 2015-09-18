@@ -82,6 +82,10 @@
       <Project>{b7c161f3-b7e5-4298-8ca3-6d8bbe3f4747}</Project>
       <Name>Circulaire</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OuEx\OuEx.csproj">
+      <Project>{9dcaa3ef-2d53-4f7b-b282-faf3378ad3e9}</Project>
+      <Name>OuEx</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rotation\Rotation.csproj">
       <Project>{2f8e1324-c2be-48f4-8c70-bc365e9ffe18}</Project>
       <Name>Rotation</Name>

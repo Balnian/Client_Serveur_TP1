@@ -32,7 +32,7 @@
             this.BT_Dechiffrer = new System.Windows.Forms.Button();
             this.RB_Rotation = new System.Windows.Forms.RadioButton();
             this.RB_Circulaire = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.RB_OuEx = new System.Windows.Forms.RadioButton();
             this.TB_Avant = new System.Windows.Forms.TextBox();
             this.TB_Apres = new System.Windows.Forms.TextBox();
             this.NmUPDOWN = new System.Windows.Forms.NumericUpDown();
@@ -84,16 +84,16 @@
             this.RB_Circulaire.Text = "Circulaire";
             this.RB_Circulaire.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // RB_OuEx
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(122, 103);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(43, 17);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "???";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RB_OuEx.AutoSize = true;
+            this.RB_OuEx.Location = new System.Drawing.Point(122, 103);
+            this.RB_OuEx.Name = "RB_OuEx";
+            this.RB_OuEx.Size = new System.Drawing.Size(78, 17);
+            this.RB_OuEx.TabIndex = 4;
+            this.RB_OuEx.TabStop = true;
+            this.RB_OuEx.Text = "Ou Exclusif";
+            this.RB_OuEx.UseVisualStyleBackColor = true;
             // 
             // TB_Avant
             // 
@@ -144,7 +144,7 @@
             this.Controls.Add(this.NmUPDOWN);
             this.Controls.Add(this.TB_Apres);
             this.Controls.Add(this.TB_Avant);
-            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.RB_OuEx);
             this.Controls.Add(this.RB_Circulaire);
             this.Controls.Add(this.RB_Rotation);
             this.Controls.Add(this.BT_Dechiffrer);
@@ -163,7 +163,7 @@
         private System.Windows.Forms.Button BT_Dechiffrer;
         private System.Windows.Forms.RadioButton RB_Rotation;
         private System.Windows.Forms.RadioButton RB_Circulaire;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton RB_OuEx;
         private System.Windows.Forms.TextBox TB_Avant;
         private System.Windows.Forms.TextBox TB_Apres;
         private System.Windows.Forms.NumericUpDown NmUPDOWN;

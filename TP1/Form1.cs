@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Rotation;
 using Circulaire;
+using OuEx;
 
 namespace TP1
 {
@@ -37,7 +38,11 @@ namespace TP1
             }
             else if (RB_Circulaire.Checked)
             {
-                TB_Apres.Text = Rotations.Chiffrer(TB_Avant.Text, (int)NmUPDOWN.Value);
+                TB_Apres.Text = Circulaires.Chiffrer(TB_Avant.Text, (int)NmUPDOWN.Value);
+            }
+            else if (RB_OuEx.Checked)
+            {
+                TB_Apres.Text = OuExs.ChiffrerDechiffrer(TB_Avant.Text, (int)NmUPDOWN.Value);
             }
             
         }
@@ -50,7 +55,11 @@ namespace TP1
             }
             else if (RB_Circulaire.Checked)
             {
-                TB_Avant.Text = Rotations.Dechiffrer(TB_Apres.Text, (int)NmUPDOWN.Value);
+                TB_Avant.Text = Circulaires.Dechiffrer(TB_Apres.Text, (int)NmUPDOWN.Value);
+            }
+            else if (RB_OuEx.Checked)
+            {
+                TB_Avant.Text = OuExs.ChiffrerDechiffrer(TB_Apres.Text, (int)NmUPDOWN.Value);
             }
         }
     }
